@@ -8,7 +8,7 @@ PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
 
 X11INC = /usr/include/X11
-X11LIB = /usr/include/X11
+X11LIB = /usr/lib/X11
 
 PKG_CONFIG = pkg-config
 
@@ -22,7 +22,7 @@ LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\
 
 # flags
 STCPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600
-STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)
+STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS) -O2 -fomit-frame-pointer 
 STLDFLAGS = $(LIBS) $(LDFLAGS)
 
 # OpenBSD:
