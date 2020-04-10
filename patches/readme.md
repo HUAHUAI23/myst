@@ -1,4 +1,4 @@
-## these patches i have patched
+## the patches i have patched
 		alpha-0.8.2.diff  
 		anysize-0.8.1.diff  
 		blinking-cursor-20180605.diff  
